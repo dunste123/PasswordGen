@@ -22,6 +22,11 @@ namespace PasswordVault
         {
             PasswordGenerator generator = new PasswordGenerator();
 
+            generator.LettersEnabled = this.cbLetterDSte.Checked;
+            generator.UpperCaseEnabled = this.cbCapitalsDSte.Checked;
+            generator.NumbersEnabled = this.cbNumDSte.Checked;
+            generator.SpecialEnabled = this.cbSpecialDSte.Checked;
+
             string output = generator.generate((int)this.numericUpDown1.Value);
 
             if (output == null)
