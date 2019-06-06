@@ -62,7 +62,7 @@
             this.numericUpDown1.Size = new System.Drawing.Size(120, 20);
             this.numericUpDown1.TabIndex = 1;
             this.numericUpDown1.Value = new decimal(new int[] {
-            20,
+            10,
             0,
             0,
             0});
@@ -94,8 +94,6 @@
             // cbLetterDSte
             // 
             this.cbLetterDSte.AutoSize = true;
-            this.cbLetterDSte.Checked = true;
-            this.cbLetterDSte.CheckState = System.Windows.Forms.CheckState.Checked;
             this.cbLetterDSte.Location = new System.Drawing.Point(7, 44);
             this.cbLetterDSte.Name = "cbLetterDSte";
             this.cbLetterDSte.Size = new System.Drawing.Size(94, 17);
@@ -107,8 +105,6 @@
             // cbNumDSte
             // 
             this.cbNumDSte.AutoSize = true;
-            this.cbNumDSte.Checked = true;
-            this.cbNumDSte.CheckState = System.Windows.Forms.CheckState.Checked;
             this.cbNumDSte.Location = new System.Drawing.Point(109, 20);
             this.cbNumDSte.Name = "cbNumDSte";
             this.cbNumDSte.Size = new System.Drawing.Size(68, 17);
@@ -120,8 +116,6 @@
             // cbCapitalsDSte
             // 
             this.cbCapitalsDSte.AutoSize = true;
-            this.cbCapitalsDSte.Checked = true;
-            this.cbCapitalsDSte.CheckState = System.Windows.Forms.CheckState.Checked;
             this.cbCapitalsDSte.Location = new System.Drawing.Point(7, 20);
             this.cbCapitalsDSte.Name = "cbCapitalsDSte";
             this.cbCapitalsDSte.Size = new System.Drawing.Size(63, 17);
@@ -138,7 +132,7 @@
             this.btnGenerateDSte.TabIndex = 3;
             this.btnGenerateDSte.Text = "Generate";
             this.btnGenerateDSte.UseVisualStyleBackColor = true;
-            this.btnGenerateDSte.Click += new System.EventHandler(this.btnGenerateDSte_Click);
+            this.btnGenerateDSte.Click += new System.EventHandler(this.BtnGenerateDSte_Click);
             // 
             // txbOutputDSte
             // 

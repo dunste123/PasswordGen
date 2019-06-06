@@ -14,7 +14,23 @@ namespace PasswordVault
         public bool UpperCaseEnabled { get; set; }
         public bool SpecialEnabled { get; set; }
         public bool NumbersEnabled { get; set; }
-        
+
+        private Configuration configuration;
+
+        public PasswordGenerator(Configuration configuration)
+        {
+            this.configuration = configuration;
+
+            this.LettersEnabled = configuration.LettersEnabled;
+            this.UpperCaseEnabled = configuration.UpperCaseEnabled;
+            this.SpecialEnabled = configuration.SpecialEnabled;
+            this.NumbersEnabled = configuration.NumbersEnabled;
+        }
+
+        public String generate()
+        {
+            return generate(configuration.PasswordLength);
+        }
 
         public string generate(int length)
         {
