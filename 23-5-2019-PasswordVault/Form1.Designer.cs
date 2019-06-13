@@ -37,8 +37,19 @@
             this.cbCapitalsDSte = new System.Windows.Forms.CheckBox();
             this.btnGenerateDSte = new System.Windows.Forms.Button();
             this.txbOutputDSte = new System.Windows.Forms.TextBox();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.txbSafeLocationDSte = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.txbMasterPassDSte = new System.Windows.Forms.TextBox();
+            this.txbConfirmPassDSte = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.BtnGenOrOpenDSte = new System.Windows.Forms.Button();
+            this.lbPaswordsDSte = new System.Windows.Forms.ListBox();
+            this.label5 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.groupBox1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -144,11 +155,105 @@
             this.txbOutputDSte.Size = new System.Drawing.Size(252, 20);
             this.txbOutputDSte.TabIndex = 4;
             // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.BtnGenOrOpenDSte);
+            this.groupBox2.Controls.Add(this.label4);
+            this.groupBox2.Controls.Add(this.label3);
+            this.groupBox2.Controls.Add(this.label2);
+            this.groupBox2.Controls.Add(this.txbConfirmPassDSte);
+            this.groupBox2.Controls.Add(this.txbMasterPassDSte);
+            this.groupBox2.Controls.Add(this.txbSafeLocationDSte);
+            this.groupBox2.Location = new System.Drawing.Point(391, 61);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(360, 209);
+            this.groupBox2.TabIndex = 5;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "VaultSettings";
+            // 
+            // txbSafeLocationDSte
+            // 
+            this.txbSafeLocationDSte.Location = new System.Drawing.Point(90, 21);
+            this.txbSafeLocationDSte.Name = "txbSafeLocationDSte";
+            this.txbSafeLocationDSte.Size = new System.Drawing.Size(110, 20);
+            this.txbSafeLocationDSte.TabIndex = 0;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(6, 24);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(69, 13);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Safe location";
+            // 
+            // txbMasterPassDSte
+            // 
+            this.txbMasterPassDSte.Location = new System.Drawing.Point(100, 68);
+            this.txbMasterPassDSte.Name = "txbMasterPassDSte";
+            this.txbMasterPassDSte.Size = new System.Drawing.Size(100, 20);
+            this.txbMasterPassDSte.TabIndex = 0;
+            // 
+            // txbConfirmPassDSte
+            // 
+            this.txbConfirmPassDSte.Location = new System.Drawing.Point(100, 94);
+            this.txbConfirmPassDSte.Name = "txbConfirmPassDSte";
+            this.txbConfirmPassDSte.Size = new System.Drawing.Size(100, 20);
+            this.txbConfirmPassDSte.TabIndex = 0;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(6, 68);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(88, 13);
+            this.label3.TabIndex = 1;
+            this.label3.Text = "Master Password";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(6, 98);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(91, 13);
+            this.label4.TabIndex = 1;
+            this.label4.Text = "Confirm Password";
+            // 
+            // BtnGenOrOpenDSte
+            // 
+            this.BtnGenOrOpenDSte.Location = new System.Drawing.Point(9, 142);
+            this.BtnGenOrOpenDSte.Name = "BtnGenOrOpenDSte";
+            this.BtnGenOrOpenDSte.Size = new System.Drawing.Size(155, 50);
+            this.BtnGenOrOpenDSte.TabIndex = 2;
+            this.BtnGenOrOpenDSte.Text = "Generate or open";
+            this.BtnGenOrOpenDSte.UseVisualStyleBackColor = true;
+            this.BtnGenOrOpenDSte.Click += new System.EventHandler(this.BtnGenOrOpenDSte_Click);
+            // 
+            // lbPaswordsDSte
+            // 
+            this.lbPaswordsDSte.FormattingEnabled = true;
+            this.lbPaswordsDSte.Location = new System.Drawing.Point(391, 299);
+            this.lbPaswordsDSte.Name = "lbPaswordsDSte";
+            this.lbPaswordsDSte.Size = new System.Drawing.Size(360, 121);
+            this.lbPaswordsDSte.TabIndex = 6;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(303, 299);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(82, 13);
+            this.label5.TabIndex = 7;
+            this.label5.Text = "Your passwords";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.lbPaswordsDSte);
+            this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.txbOutputDSte);
             this.Controls.Add(this.btnGenerateDSte);
             this.Controls.Add(this.groupBox1);
@@ -159,6 +264,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -175,6 +282,16 @@
         private System.Windows.Forms.CheckBox cbCapitalsDSte;
         private System.Windows.Forms.Button btnGenerateDSte;
         private System.Windows.Forms.TextBox txbOutputDSte;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.Button BtnGenOrOpenDSte;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox txbConfirmPassDSte;
+        private System.Windows.Forms.TextBox txbMasterPassDSte;
+        private System.Windows.Forms.TextBox txbSafeLocationDSte;
+        private System.Windows.Forms.ListBox lbPaswordsDSte;
+        private System.Windows.Forms.Label label5;
     }
 }
 

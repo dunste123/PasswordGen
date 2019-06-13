@@ -1,9 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+using System.IO;
 using System.Security.Cryptography;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace PasswordVault
 {
@@ -62,8 +60,24 @@ namespace PasswordVault
             }
 
             string output = builder.ToString();
+            string rand = this.RandomString(output, length);
 
-            return this.RandomString(output, length);
+            WriteToFile(rand);
+
+            return rand;
+        }
+
+        private void WriteToFile(string pass)
+        {
+            if (!File.Exists(configuration.VaultFileName) || configuration.MasterPass == "")
+            {
+                return;
+            }
+
+            using (StreamWriter writer = new StreamWriter(configuration.VaultFileName, true))
+            {
+                writer.WriteLine(Crypt.EncryptString(pass, configuration.MasterPass, configuration.IV));
+            }
         }
 
         private string RandomString(string valid, int length)
